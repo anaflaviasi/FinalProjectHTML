@@ -1,0 +1,576 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas: "header" "main" "section" "section" "section" "section" "section" "footer";
+}
+
+a {
+  text-decoration: none;
+  color: #485140;
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+}
+header .Header_social_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  min-height: 45px;
+  background-color: #a1af94;
+  color: #eff2ea;
+  position: relative;
+  overflow: hidden;
+}
+header .Header_social_bar .Header_social_bar_position {
+  display: block;
+  min-height: 45px;
+  width: 100%;
+  position: fixed;
+  background-color: #a1af94;
+  color: #eff2ea;
+}
+header .Header_social_bar .Header_social_bar_position .Nav_social_media_buttons {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  position: absolute;
+  left: 0;
+  margin-left: 45px;
+}
+header .Header_social_bar .Header_social_bar_position .Nav_social_media_buttons li {
+  padding: 8px;
+  margin: 0 0 0.25em 0;
+}
+header .Header_social_bar .Header_social_bar_position .Nav_social_media_buttons li .Social_link .Icon {
+  fill: none;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  stroke-width: 1px;
+  stroke: currentColor;
+}
+header .Header_social_bar .Header_social_bar_position .Nav_social_media_buttons li .Social_link .Icon path {
+  stroke: #eff2ea;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+header .Header_social_bar .Header_social_bar_position .Nav_social_media_buttons li .Social_link .Icon .Icon_fallback_text {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+header .Header_menu_logo {
+  display: block;
+  min-height: 160px;
+  background-color: #ffffff;
+  color: #485140;
+  transition: top 0.2s linear;
+  position: relative;
+  overflow: hidden;
+}
+header .Header_menu_logo .Header_menu_logo_position {
+  position: fixed;
+  min-height: 60px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #485140;
+}
+header .Header_menu_logo .Header_menu_logo_position .Logo_title {
+  margin: 0;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+}
+header .Header_menu_logo .Header_menu_logo_position .Nav_menu_logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: 5px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
+header .Header_menu_logo .Header_menu_logo_position .Nav_menu_logo .Header_menu {
+  font-family: sans-serif;
+  display: block;
+  align-items: center;
+  width: 100%;
+  font-size: 16px;
+}
+header .Header_menu_logo .Header_menu_logo_position .Nav_menu_logo .Header_menu .Nav_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .Header_menu_logo .Header_menu_logo_position .Nav_menu_logo .Header_menu .Nav_menu ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0;
+}
+header .Header_menu_logo .Header_menu_logo_position .Nav_menu_logo .Header_menu .Nav_menu ul li {
+  list-style: none;
+  margin-right: 30px;
+}
+header .Header_menu_logo .Header_menu_logo_position .Nav_menu_logo .Header_menu .Nav_menu ul li a:hover {
+  color: #a1af94;
+}
+header .Header_menu_logo .Header_menu_logo_position .Nav_menu_logo .Icon_bag {
+  display: flex;
+  justify-content: flex-end;
+  transform-style: flat;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+header .Header_menu_logo .Header_menu_logo_position .Nav_menu_logo .Icon_bag .Icon_bag_button {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  vertical-align: baseline;
+}
+header .Header_menu_logo .Header_menu_logo_position .Nav_menu_logo .Icon_bag .Icon_bag_button a {
+  padding: 0;
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.25s ease-in-out;
+  line-height: 1.2;
+  color: #485140;
+}
+header .Header_menu_logo .Header_menu_logo_position .Nav_menu_logo .Icon_bag .Icon_bag_button a .Icon {
+  fill: none;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  stroke-width: 1px;
+  stroke: currentColor;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  min-height: 570px;
+  overflow: hidden;
+  background-color: transparent;
+  color: #485140;
+  background-image: url("https://images.unsplash.com/photo-1477511801984-4ad318ed9846?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fHBsYW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  background-position: bottom;
+}
+main .Main_container {
+  display: flex;
+  top: 0;
+  right: 0;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+main .Main_container .Main_content {
+  background-color: #ffffff;
+  color: #212121;
+  margin: 30px;
+  padding: 60px;
+}
+main .Main_container .Main_content .Main_button {
+  margin: 1rem;
+  color: #000;
+  border: 1px solid #000;
+  padding: 9px 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+main .Main_container .Main_content .Main_button:hover {
+  color: #FFF;
+  background-color: #000;
+}
+
+.Section_plants, .Section_supplies, .Section_pottery, .Section_home_decor, .Section_gift_card {
+  text-align: center;
+}
+.Section_plants h2, .Section_supplies h2, .Section_pottery h2, .Section_home_decor h2, .Section_gift_card h2 {
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+.Section_plants .Container_section_p, .Section_supplies .Container_section_p, .Section_pottery .Container_section_p, .Section_home_decor .Container_section_p, .Section_gift_card .Container_section_p {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.Section_plants .Container_section_p .Section_p, .Section_supplies .Container_section_p .Section_p, .Section_pottery .Container_section_p .Section_p, .Section_home_decor .Container_section_p .Section_p, .Section_gift_card .Container_section_p .Section_p {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 19px;
+}
+.Section_plants .Container_section_p .Section_blog_button, .Section_supplies .Container_section_p .Section_blog_button, .Section_pottery .Container_section_p .Section_blog_button, .Section_home_decor .Container_section_p .Section_blog_button, .Section_gift_card .Container_section_p .Section_blog_button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #485140;
+  padding: 10px 30px;
+}
+.Section_plants .Container_section_p .Section_blog_button:hover, .Section_supplies .Container_section_p .Section_blog_button:hover, .Section_pottery .Container_section_p .Section_blog_button:hover, .Section_home_decor .Container_section_p .Section_blog_button:hover, .Section_gift_card .Container_section_p .Section_blog_button:hover {
+  background-color: #485140;
+  color: #FFFFFF;
+}
+.Section_plants .Container_section_article, .Section_supplies .Container_section_article, .Section_pottery .Container_section_article, .Section_home_decor .Container_section_article, .Section_gift_card .Container_section_article {
+  display: flexbox;
+  background-color: #fafafa;
+  justify-content: center;
+  justify-items: center;
+}
+.Section_plants .Container_section_article .Section_article, .Section_supplies .Container_section_article .Section_article, .Section_pottery .Container_section_article .Section_article, .Section_home_decor .Container_section_article .Section_article, .Section_gift_card .Container_section_article .Section_article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+.Section_plants .Container_section_article .Section_article Article, .Section_supplies .Container_section_article .Section_article Article, .Section_pottery .Container_section_article .Section_article Article, .Section_home_decor .Container_section_article .Section_article Article, .Section_gift_card .Container_section_article .Section_article Article {
+  padding: 10px 40px;
+  width: 100%;
+}
+.Section_plants .Container_section_article .Section_article Article .Article_image, .Section_supplies .Container_section_article .Section_article Article .Article_image, .Section_pottery .Container_section_article .Section_article Article .Article_image, .Section_home_decor .Container_section_article .Section_article Article .Article_image, .Section_gift_card .Container_section_article .Section_article Article .Article_image {
+  max-width: 100%;
+}
+.Section_plants .Container_section_article .Section_article Article .Article_image a:hover, .Section_supplies .Container_section_article .Section_article Article .Article_image a:hover, .Section_pottery .Container_section_article .Section_article Article .Article_image a:hover, .Section_home_decor .Container_section_article .Section_article Article .Article_image a:hover, .Section_gift_card .Container_section_article .Section_article Article .Article_image a:hover {
+  background-color: #000;
+  opacity: 0.5;
+}
+.Section_plants .Container_section_article .Section_article Article .Article_image img, .Section_supplies .Container_section_article .Section_article Article .Article_image img, .Section_pottery .Container_section_article .Section_article Article .Article_image img, .Section_home_decor .Container_section_article .Section_article Article .Article_image img, .Section_gift_card .Container_section_article .Section_article Article .Article_image img {
+  height: 60%;
+  width: 100%;
+}
+.Section_plants .Container_section_article .Section_article .Article_content h2, .Section_supplies .Container_section_article .Section_article .Article_content h2, .Section_pottery .Container_section_article .Section_article .Article_content h2, .Section_home_decor .Container_section_article .Section_article .Article_content h2, .Section_gift_card .Container_section_article .Section_article .Article_content h2 {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 3px;
+  line-height: 1.2;
+  font-size: 22px;
+  font-weight: 400;
+  display: block;
+  -webkit-margin-before: 0.83em;
+          margin-block-start: 0.83em;
+  -webkit-margin-after: 0.83em;
+          margin-block-end: 0.83em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+.Section_plants .Container_section_article .Section_article .Article_content .Article_p, .Section_supplies .Container_section_article .Section_article .Article_content .Article_p, .Section_pottery .Container_section_article .Section_article .Article_content .Article_p, .Section_home_decor .Container_section_article .Section_article .Article_content .Article_p, .Section_gift_card .Container_section_article .Section_article .Article_content .Article_p {
+  margin-bottom: 10px;
+}
+.Section_plants .Container_section_article .Section_article .Article_content .Article_p p, .Section_supplies .Container_section_article .Section_article .Article_content .Article_p p, .Section_pottery .Container_section_article .Section_article .Article_content .Article_p p, .Section_home_decor .Container_section_article .Section_article .Article_content .Article_p p, .Section_gift_card .Container_section_article .Section_article .Article_content .Article_p p {
+  font-size: 17px;
+  text-align: left;
+  font-weight: normal;
+  font-style: italic;
+}
+.Section_plants .Container_section_article .Section_article .Article_content a, .Section_supplies .Container_section_article .Section_article .Article_content a, .Section_pottery .Container_section_article .Section_article .Article_content a, .Section_home_decor .Container_section_article .Section_article .Article_content a, .Section_gift_card .Container_section_article .Section_article .Article_content a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #485140;
+  font-weight: bold;
+}
+.Section_plants .Container_section_article .Section_article .Article_content a:hover, .Section_supplies .Container_section_article .Section_article .Article_content a:hover, .Section_pottery .Container_section_article .Section_article .Article_content a:hover, .Section_home_decor .Container_section_article .Section_article .Article_content a:hover, .Section_gift_card .Container_section_article .Section_article .Article_content a:hover {
+  color: #bcb2a8;
+  font-weight: bold;
+}
+.Section_plants .Container_section_article .Section_article_gift, .Section_supplies .Container_section_article .Section_article_gift, .Section_pottery .Container_section_article .Section_article_gift, .Section_home_decor .Container_section_article .Section_article_gift, .Section_gift_card .Container_section_article .Section_article_gift {
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+.Section_plants .Container_section_article .Section_article_gift article .Article_image_gift, .Section_supplies .Container_section_article .Section_article_gift article .Article_image_gift, .Section_pottery .Container_section_article .Section_article_gift article .Article_image_gift, .Section_home_decor .Container_section_article .Section_article_gift article .Article_image_gift, .Section_gift_card .Container_section_article .Section_article_gift article .Article_image_gift {
+  background-image: url("https://images.unsplash.com/photo-1566125882500-87e10f726cdc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2lmdCUyMGNhcmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+  background-size: auto;
+}
+.Section_plants .Container_section_article .Section_article_gift article .Article_image_gift .Article_image_gift_p, .Section_supplies .Container_section_article .Section_article_gift article .Article_image_gift .Article_image_gift_p, .Section_pottery .Container_section_article .Section_article_gift article .Article_image_gift .Article_image_gift_p, .Section_home_decor .Container_section_article .Section_article_gift article .Article_image_gift .Article_image_gift_p, .Section_gift_card .Container_section_article .Section_article_gift article .Article_image_gift .Article_image_gift_p {
+  font-family: sans-serif;
+  font-weight: 500px;
+  font-style: oblique;
+  padding: 100px 100px;
+}
+.Section_plants .Container_section_article .Section_article_gift article .Article_image_gift .Article_image_gift_p a, .Section_supplies .Container_section_article .Section_article_gift article .Article_image_gift .Article_image_gift_p a, .Section_pottery .Container_section_article .Section_article_gift article .Article_image_gift .Article_image_gift_p a, .Section_home_decor .Container_section_article .Section_article_gift article .Article_image_gift .Article_image_gift_p a, .Section_gift_card .Container_section_article .Section_article_gift article .Article_image_gift .Article_image_gift_p a {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #485140;
+  font-weight: bold;
+}
+.Section_plants .Container_section_article .Section_article_gift article .Article_image_gift .Article_image_gift_p a:hover, .Section_supplies .Container_section_article .Section_article_gift article .Article_image_gift .Article_image_gift_p a:hover, .Section_pottery .Container_section_article .Section_article_gift article .Article_image_gift .Article_image_gift_p a:hover, .Section_home_decor .Container_section_article .Section_article_gift article .Article_image_gift .Article_image_gift_p a:hover, .Section_gift_card .Container_section_article .Section_article_gift article .Article_image_gift .Article_image_gift_p a:hover {
+  color: #bcb2a8;
+  font-weight: bolder;
+}
+
+footer {
+  background-color: #eff2ea;
+  padding: 20px 20px;
+}
+footer .Logo_title {
+  margin: 0;
+  padding: 15px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 40px;
+}
+footer .Footer_Columns {
+  display: flex;
+  flex-direction: row;
+}
+footer .Footer_Columns .Footer_container {
+  padding: 10px 10px;
+  width: 100%;
+}
+footer .Footer_Columns .Footer_container h2 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #212121;
+}
+footer .Footer_Columns .Footer_container p {
+  color: #212121;
+  line-height: 20px;
+  min-height: 33px;
+  min-width: 40px;
+}
+footer .Footer_Columns .Footer_container .Newsletter {
+  margin-right: 70px;
+}
+footer .Footer_Columns .Footer_container .Newsletter .Newsletter_email {
+  display: flex;
+  flex-direction: row;
+}
+footer .Footer_Columns .Footer_container .Newsletter .Newsletter_email .Newsletter_input {
+  background-color: #eff2ea;
+  border: none;
+  border-bottom: 1px solid #485140;
+  width: 300px;
+}
+footer .Footer_Columns .Footer_container .Newsletter .Newsletter_email .Newsletter_button {
+  border: none;
+  color: #485140;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+footer .Footer_Columns .Footer_container .Newsletter .Newsletter_email .Newsletter_button:hover {
+  color: #a1af94;
+  cursor: pointer;
+}
+footer .Footer_Columns .Footer_container ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+footer .Footer_Columns .Footer_container ul li {
+  margin: 0;
+  list-style: none;
+  line-height: 24px;
+  min-height: 33px;
+  min-width: 40px;
+}
+footer .Footer_Columns .Footer_container .Location ul, footer .Footer_Columns .Footer_container .Customer ul, footer .Footer_Columns .Footer_container .Company ul {
+  color: #212121;
+}
+footer .Footer_Columns .Footer_container .Location ul li a, footer .Footer_Columns .Footer_container .Customer ul li a, footer .Footer_Columns .Footer_container .Company ul li a {
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+footer .Footer_Columns .Footer_container .Location ul li a:hover, footer .Footer_Columns .Footer_container .Customer ul li a:hover, footer .Footer_Columns .Footer_container .Company ul li a:hover {
+  color: #a1af94;
+}
+footer .Footer_Columns .Footer_container .Contact .Nav_social_media_buttons {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+footer .Footer_Columns .Footer_container .Contact .Nav_social_media_buttons li {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+}
+footer .Footer_Columns .Footer_container .Contact .Nav_social_media_buttons li .Social_link .Icon {
+  fill: none;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  stroke-width: 1px;
+  stroke: currentColor;
+}
+footer .Footer_Columns .Footer_container .Contact .Nav_social_media_buttons li .Social_link .Icon path {
+  stroke: #485140;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+footer .Footer_Columns .Footer_container .Contact .Nav_social_media_buttons li .Social_link:hover {
+  color: #a1af94;
+}
+footer .Footer_legal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #485140;
+}
+footer .Footer_legal .Legal_links {
+  display: flex;
+  flex-direction: row;
+}
+footer .Footer_legal .Legal_links .Effect_legal_links {
+  margin-right: 20px;
+}
+footer .Footer_legal .Legal_links .Effect_legal_links:hover {
+  color: #a1af94;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header .Header_menu_logo {
+    display: flex;
+  }
+  header .Header_menu_logo .Header_menu_logo_position .Nav_menu_logo {
+    display: flex;
+    flex-direction: column;
+  }
+  header .Header_menu_logo .Header_menu_logo_position .Nav_menu_logo .Header_menu {
+    display: flex;
+  }
+  header .Header_menu_logo .Header_menu_logo_position .Nav_menu_logo .Header_menu .Nav_menu {
+    display: flex;
+    flex-direction: column;
+  }
+  header .Header_menu_logo .Header_menu_logo_position .Nav_menu_logo .Header_menu .Nav_menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+  header .Header_menu_logo .Header_menu_logo_position .Nav_menu_logo .Icon_bag .Icon_bag_button {
+    margin-left: 40px;
+  }
+  .Section_plants .Container_section_article .Section_article, .Section_supplies .Container_section_article .Section_article, .Section_pottery .Container_section_article .Section_article, .Section_home_decor .Container_section_article .Section_article, .Section_gift_card .Container_section_article .Section_article {
+    display: flex;
+    flex-direction: column;
+  }
+  .Section_plants .Container_section_article .Section_article Article, .Section_supplies .Container_section_article .Section_article Article, .Section_pottery .Container_section_article .Section_article Article, .Section_home_decor .Container_section_article .Section_article Article, .Section_gift_card .Container_section_article .Section_article Article {
+    padding: 0px;
+    margin-bottom: 50px;
+  }
+  .Section_plants .Container_section_article .Section_article Article .Article_image, .Section_supplies .Container_section_article .Section_article Article .Article_image, .Section_pottery .Container_section_article .Section_article Article .Article_image, .Section_home_decor .Container_section_article .Section_article Article .Article_image, .Section_gift_card .Container_section_article .Section_article Article .Article_image {
+    max-width: 100%;
+    max-height: 50%;
+  }
+  .Section_plants .Container_section_article .Section_article Article .Article_image a:hover, .Section_supplies .Container_section_article .Section_article Article .Article_image a:hover, .Section_pottery .Container_section_article .Section_article Article .Article_image a:hover, .Section_home_decor .Container_section_article .Section_article Article .Article_image a:hover, .Section_gift_card .Container_section_article .Section_article Article .Article_image a:hover {
+    background-color: #000;
+    opacity: 0.5;
+  }
+  .Section_plants .Container_section_article .Section_article Article .Article_image img, .Section_supplies .Container_section_article .Section_article Article .Article_image img, .Section_pottery .Container_section_article .Section_article Article .Article_image img, .Section_home_decor .Container_section_article .Section_article Article .Article_image img, .Section_gift_card .Container_section_article .Section_article Article .Article_image img {
+    height: 380px;
+    width: 100%;
+  }
+  footer .Footer_Columns {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  footer .Footer_legal {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .Footer_legal .Legal_links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header .Header_menu_logo {
+    display: flex;
+  }
+  header .Header_menu_logo .Header_menu_logo_position .Nav_menu_logo {
+    display: flex;
+    flex-direction: column;
+  }
+  header .Header_menu_logo .Header_menu_logo_position .Nav_menu_logo .Icon_bag .Icon_bag_button {
+    margin-left: 40px;
+  }
+  .Section_plants .Container_section_article .Section_article, .Section_supplies .Container_section_article .Section_article, .Section_pottery .Container_section_article .Section_article, .Section_home_decor .Container_section_article .Section_article, .Section_gift_card .Container_section_article .Section_article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .Section_plants .Container_section_article .Section_article Article, .Section_supplies .Container_section_article .Section_article Article, .Section_pottery .Container_section_article .Section_article Article, .Section_home_decor .Container_section_article .Section_article Article, .Section_gift_card .Container_section_article .Section_article Article {
+    padding: 0px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .Section_plants .Container_section_article .Section_article Article .Article_image, .Section_supplies .Container_section_article .Section_article Article .Article_image, .Section_pottery .Container_section_article .Section_article Article .Article_image, .Section_home_decor .Container_section_article .Section_article Article .Article_image, .Section_gift_card .Container_section_article .Section_article Article .Article_image {
+    width: 100%;
+  }
+  .Section_plants .Container_section_article .Section_article Article .Article_image a:hover, .Section_supplies .Container_section_article .Section_article Article .Article_image a:hover, .Section_pottery .Container_section_article .Section_article Article .Article_image a:hover, .Section_home_decor .Container_section_article .Section_article Article .Article_image a:hover, .Section_gift_card .Container_section_article .Section_article Article .Article_image a:hover {
+    background-color: #000;
+    opacity: 0.5;
+  }
+  .Section_plants .Container_section_article .Section_article Article .Article_image img, .Section_supplies .Container_section_article .Section_article Article .Article_image img, .Section_pottery .Container_section_article .Section_article Article .Article_image img, .Section_home_decor .Container_section_article .Section_article Article .Article_image img, .Section_gift_card .Container_section_article .Section_article Article .Article_image img {
+    height: 50%;
+    width: 50%;
+  }
+  .Section_plants .Container_section_article .Section_article .Article_content h2, .Section_supplies .Container_section_article .Section_article .Article_content h2, .Section_pottery .Container_section_article .Section_article .Article_content h2, .Section_home_decor .Container_section_article .Section_article .Article_content h2, .Section_gift_card .Container_section_article .Section_article .Article_content h2 {
+    text-align: center;
+  }
+  .Section_plants .Container_section_article .Section_article .Article_content .Article_p p, .Section_supplies .Container_section_article .Section_article .Article_content .Article_p p, .Section_pottery .Container_section_article .Section_article .Article_content .Article_p p, .Section_home_decor .Container_section_article .Section_article .Article_content .Article_p p, .Section_gift_card .Container_section_article .Section_article .Article_content .Article_p p {
+    text-align: center;
+  }
+  .Section_plants .Container_section_article .Section_article .Article_content a, .Section_supplies .Container_section_article .Section_article .Article_content a, .Section_pottery .Container_section_article .Section_article .Article_content a, .Section_home_decor .Container_section_article .Section_article .Article_content a, .Section_gift_card .Container_section_article .Section_article .Article_content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .Footer_Columns {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-bottom: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */

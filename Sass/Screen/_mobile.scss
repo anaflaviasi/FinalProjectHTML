@@ -1,0 +1,95 @@
+
+header{
+    display: flex;
+    flex-direction: column;
+   
+    .Header_menu_logo{    
+        display:flex;
+        
+        .Header_menu_logo_position{
+       
+            .Nav_menu_logo{
+                display: flex;
+                flex-direction: column;
+
+                .Header_menu{
+                    display: flex;   
+                   
+                    .Nav_menu{
+                        display: flex;
+                        flex-direction: column;
+                        
+                        ul{
+                        display: flex;
+                        flex-direction: column;
+                        }
+                    }
+                }
+
+                .Icon_bag{
+
+                    .Icon_bag_button{
+                        margin-left: 40px;
+                    }
+                }
+           }
+        }
+    }
+}
+
+
+
+.Section_plants, .Section_supplies, .Section_pottery, .Section_home_decor, .Section_gift_card{
+   
+    .Container_section_article{
+
+        .Section_article{
+            display: flex;
+            flex-direction: column;
+
+            Article{
+                padding: 0px;  
+                margin-bottom: 50px;
+                
+                .Article_image{
+                    max-width: 100%;
+                    max-height: 50%;            
+                
+                    a:hover{
+                        background-color: #000;
+                        opacity: .5;
+                    }
+                
+                    img{
+                        height: 380px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+footer{
+
+    .Footer_Columns{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+       
+    }
+
+
+    .Footer_legal{
+        display: flex;
+        flex-direction: column;
+
+    
+        .Legal_links{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
