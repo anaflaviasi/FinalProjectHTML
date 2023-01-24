@@ -467,6 +467,7 @@ footer .Footer_legal .Legal_links .Effect_legal_links:hover {
   }
   header .Header_menu_logo {
     display: flex;
+    min-height: 290px;
   }
   header .Header_menu_logo .Header_menu_logo_position .Nav_menu_logo {
     display: flex;
